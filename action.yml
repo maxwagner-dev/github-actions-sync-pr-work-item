@@ -1,0 +1,19 @@
+name: 'Synchronize GitHub PR to Azure Boards'
+description: 'Create a work item in Azure DevOps when a Pull Request is created'
+author: 'Max Wagner'
+inputs:
+  ado-token:
+    description: 'Azure DevOps Personal Access Token (PAT)'
+    required: true
+    default: ''
+  ado-organization:
+    description: 'Azure DevOps organization name'
+    required: true
+    default: ''
+  ado-project:
+    description: 'Azure DevOps project name'
+    required: true
+    default: ''
+runs:
+  using: 'docker'
+  image: 'Dockerfile'

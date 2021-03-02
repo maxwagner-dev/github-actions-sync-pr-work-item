@@ -1,0 +1,18 @@
+{
+    "name": "maxwagner-dev/github-actions-sync-pr-work-item",
+    "description": "GitHub Action to synchronize PR to Azure Boards Work Items",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Max Wagner",
+            "email": "max@wagner-dev.com"
+        }
+    ],
+    "minimum-stability": "stable",
+    "require": {},
+    "autoload": {
+        "psr-4": {
+            "MaxWagnerDev\\GitHubActions\\SyncPR\\": "src"
+        }
+    }
+}
