@@ -1,5 +1,5 @@
-FROM php:8.0.2-alpine
+FROM php:8.0.2-cli-alpine
 
 COPY src /src
 
-ENTRYPOINT [ "php /src/index.php" ]
+CMD [ "php", "/src/index.php" ]
